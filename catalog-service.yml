@@ -5,9 +5,16 @@ spring:
   application:
     name: catalog-service
 
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 20MB
+
     data:
       mongodb:
         uri: mongodb://localhost:27017/media_db
+
+
 
 
 eureka:
